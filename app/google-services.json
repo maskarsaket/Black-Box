@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "670378900378",
+    "firebase_url": "https://blackbox-6e5c1.firebaseio.com",
+    "project_id": "blackbox-6e5c1",
+    "storage_bucket": "blackbox-6e5c1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:670378900378:android:088d0bf51eb0375e",
+        "android_client_info": {
+          "package_name": "com.projectcaseum.www.blackbox"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "670378900378-hr6hr2eumf7dfve2r8tdnjdg640hqf73.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.projectcaseum.www.blackbox",
+            "certificate_hash": "AC53350996F2DFC5D6596DA7A256CDF932316FD1"
+          }
+        },
+        {
+          "client_id": "670378900378-o4st90dp780i7hft4c9j1tu7njg1h1pe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7IJbhbMQ5Bal6Pirq_48-IdtWhSLPc58"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "670378900378-o4st90dp780i7hft4c9j1tu7njg1h1pe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
