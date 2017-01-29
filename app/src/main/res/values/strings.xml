@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Black Box</string>
+    <string name="app_name">BlackBox</string>
 
     <string name="title_activity_splash">Splash</string>
     <string name="dummy_button">Dummy Button</string>

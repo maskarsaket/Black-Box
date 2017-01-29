@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -19,7 +20,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class MainActivity extends AppCompatActivity {
     private String email;
     private String password;
-    private Button signup;
+    private TextView signup;
     private Button signIn;
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
@@ -30,15 +31,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mAuth = FirebaseAuth.getInstance();
-        signup = (Button) findViewById(R.id.signUp_button);
+        signup = (TextView) findViewById(R.id.signUp_button);
         signIn = (Button) findViewById(R.id.signIn_button);
         mAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 FirebaseUser user = firebaseAuth.getCurrentUser();
                 if (user != null) {
-                    // User is signed in
+
                     Log.d("qwertyuiop", "onAuthStateChanged:signed_in:" + user.getUid());
+                    Intent intent =new Intent(MainActivity.this,LoggedIn.class);
+                    startActivity(intent);
 
                 } else {
                     // User is signed out
