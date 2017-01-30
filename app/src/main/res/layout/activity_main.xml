@@ -13,7 +13,7 @@
         android:layout_height="match_parent"
         android:src="@drawable/bckgrnd"
         android:scaleType="centerCrop"
-        android:alpha="1"/>
+        android:alpha="0.86"/>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
