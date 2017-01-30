@@ -13,6 +13,7 @@ public class LoggedIn extends AppCompatActivity {
 
     private Button sOut;
     private TextView email;
+    private TextView name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +22,11 @@ public class LoggedIn extends AppCompatActivity {
 
         sOut= (Button)findViewById(R.id.SignOut);
         email = (TextView)findViewById(R.id.user_email);
+        name = (TextView)findViewById(R.id.user_name);
+
         email.setText(FirebaseAuth.getInstance().getCurrentUser().getEmail().toString());
+        if(FirebaseAuth.getInstance().getCurrentUser().getDisplayName().toString()!=null){
+        name.setText("hey "+ FirebaseAuth.getInstance().getCurrentUser().getDisplayName().toString() + ", Scene kya hai??!, Scene kya hai??! Mera sab sahi hai..tera bol Scene kya hai??!");}
         sOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
