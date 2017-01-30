@@ -20,6 +20,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class MainActivity extends AppCompatActivity {
     private String email;
     private String password;
+    private TextView newUser;
     private TextView signup;
     private Button signIn;
     private FirebaseAuth mAuth;
@@ -31,8 +32,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mAuth = FirebaseAuth.getInstance();
+
         signup = (TextView) findViewById(R.id.signUp_button);
         signIn = (Button) findViewById(R.id.signIn_button);
+        newUser=(TextView)findViewById(R.id.new_user);
+        newUser.getBackground().setAlpha(120);
+
         mAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
