@@ -24,7 +24,10 @@
         },
         {
           "client_id": "670378900378-o4st90dp780i7hft4c9j1tu7njg1h1pe.apps.googleusercontent.com",
-          "client_type": 3
+          "client_type": 3,
+          "android_info": {
+            "package_name": "com.projectcaseum.www.blackbox"
+          }
         }
       ],
       "api_key": [

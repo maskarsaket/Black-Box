@@ -35,7 +35,7 @@ public class SignUp extends AppCompatActivity {
         signup = (Button) findViewById(R.id.signUp_new);
 
         fullName=(TextView)findViewById(R.id.full_name);
-
+        //final String newName=fullName.getText().toString();
 
         mAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override
@@ -56,8 +56,8 @@ public class SignUp extends AppCompatActivity {
                                 }
                             });
                     Log.d("qwertyuiop", "onAuthStateChanged:signed_in:" + user.getUid());
-                    Intent intent =new Intent(SignUp.this,LoggedIn.class);
-                    startActivity(intent);
+//                    Intent intent =new Intent(SignUp.this,LoggedIn.class);
+//                    startActivity(intent);
 
                 } else {
                     // User is signed out
