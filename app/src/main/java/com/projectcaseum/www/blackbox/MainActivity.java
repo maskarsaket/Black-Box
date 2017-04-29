@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity implements
                 if (user != null) {
 
                     Log.d("qwertyuiop", "onAuthStateChanged:signed_in:" + user.getUid());
-                    Intent intent =new Intent(MainActivity.this,LoggedIn.class);
+                    Intent intent =new Intent(MainActivity.this,Home.class);
                    startActivity(intent);
 
 
